@@ -15,4 +15,4 @@ else:
 def path_msg(x):
     """Return a string representation of a path."""
     # FIXME: configurability (might git-config quotePath be involved?)
-    return x.decode(errors='backslashreplace')
+    return x.decode(encoding='utf-8',errors='backslashreplace')
